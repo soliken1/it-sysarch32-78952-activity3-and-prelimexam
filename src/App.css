@@ -1,0 +1,197 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #4a8373;
+}
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #295240;
+}
+
+header > label,
+.button {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 50px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.img-header {
+  position: absolute;
+  margin-left: 10px;
+  width: 50px;
+}
+
+.layer {
+  padding: 35px 50px 50px 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.card {
+  padding: 30px 0 0 0;
+  height: 500px;
+  width: 420px;
+  background-color: #295240;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #000000;
+  width: 430px;
+  height: 510px;
+  transition: 0.5s;
+}
+
+.img-name-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-name-cont > img {
+  width: 150px;
+}
+
+.type-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.type-cont,
+.img-name-cont > label {
+  padding: 10px 0 0 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.child-1,
+.child-2 {
+  font-family: sans-serif;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.type-cont > label {
+  margin: 10px -30px 0 -30px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.stats-cont {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: nowrap;
+  width: 350px;
+}
+
+.stats-cont > * {
+  padding: 5px;
+  margin: 20px 5px 5px 5px;
+  flex: 1 100%;
+}
+
+.child-1,
+.child-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 120px;
+}
+
+@media all and (min-width: 800px) {
+  .child-1 {
+    flex: 1;
+  }
+
+  .child-2 {
+    order: 1;
+  }
+
+  .child-1 {
+    order: 1;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .child-2 {
+    flex: 1;
+  }
+}
+
+.button-header {
+  padding: 35px 0px 0px 100px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #5abd8b;
+}
+
+.button:hover {
+  background-color: #295240;
+  transition: 0.5s;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: rgb(97, 97, 228);
+}
+
+.purple {
+  background-color: purple;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.dark {
+  background-color: #353535;
+}
+
+.pink {
+  background-color: pink;
+}
