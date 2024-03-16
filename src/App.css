@@ -11,7 +11,15 @@ header {
   background-color: #295240;
 }
 
-header > label,
+header > label {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 140px;
+  color: #ffffff;
+  z-index: 1;
+}
+
 .button {
   font-family: Raleway, sans-serif;
   font-weight: 600;
@@ -23,7 +31,7 @@ header > label,
 
 .img-header {
   position: absolute;
-  margin-left: 10px;
+  margin-left: 100px;
   width: 50px;
 }
 
@@ -34,7 +42,7 @@ header > label,
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 25px;
+  gap: 55px;
 }
 
 .card {
@@ -49,9 +57,8 @@ header > label,
 }
 
 .card:hover {
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 50px #ffffff;
   width: 430px;
-  height: 510px;
   transition: 0.5s;
 }
 
@@ -158,6 +165,20 @@ header > label,
 .button:hover {
   background-color: #295240;
   transition: 0.5s;
+}
+
+.loadinglayer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadinglabel {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 58px;
+  color: #ffffff;
 }
 
 .green {

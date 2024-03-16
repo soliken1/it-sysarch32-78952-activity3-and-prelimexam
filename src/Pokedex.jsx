@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Pokemon from "./Pokemon";
+import Loading from "./Loading";
 
 const api = "https://us-central1-it-sysarch32.cloudfunctions.net/pokemon";
 function Pokedex() {
@@ -19,7 +20,7 @@ function Pokedex() {
   }, []);
 
   if (isLoading || pokemon === null) {
-    return <h1>Loading...</h1>;
+    return <Loading />;
   }
   return <Pokemon data={pokemon} />;
 }
