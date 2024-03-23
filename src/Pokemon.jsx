@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Fragment } from "react";
 
-function Pokemon(data) {
-  const [language, setLanguage] = useState("english");
+function Pokemon({ data, language, setLanguage }) {
   const excludedTypes = [
     "Grass",
     "Fire",
@@ -82,7 +80,7 @@ function Pokemon(data) {
           </button>
         </div>
         <div className="layer">
-          {data.data.map((entry, index) => (
+          {data.map((entry, index) => (
             <div key={index} className="card">
               <div className="img-name-cont">
                 <img src={entry.image} />
@@ -122,4 +120,4 @@ function Pokemon(data) {
   );
 }
 
-export default Pokemon;
+export default Pokemon
