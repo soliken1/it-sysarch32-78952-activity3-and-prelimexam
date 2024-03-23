@@ -10,7 +10,7 @@ function Pokedex() {
   const [pokemon, setPokemon] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [totalPages, setTotalPages] = useState(null);
-  const [language, setLanguage] = useState("english"); // Default language
+  const [language, setLanguage] = useState("english"); 
 
   const fetchPage = async (page) => {
     setIsLoading(true);
